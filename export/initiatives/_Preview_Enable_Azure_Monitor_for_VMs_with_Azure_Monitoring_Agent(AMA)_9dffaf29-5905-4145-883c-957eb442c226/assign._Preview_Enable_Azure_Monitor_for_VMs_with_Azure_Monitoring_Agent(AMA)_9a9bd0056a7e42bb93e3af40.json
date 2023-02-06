@@ -1,0 +1,40 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "618b3c74-c359-42a0-90d7-1386ee2d6816",
+  "tenantId": "71856354-7f5f-4f98-818b-fea226c08f0e",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "[Preview]: Enable Azure Monitor for VMs with Azure Monitoring Agent(AMA)",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9dffaf29-5905-4145-883c-957eb442c226",
+  "scope": "/providers/Microsoft.Management/managementGroups/AzureVirtualDesktop",
+  "notScopes": [],
+  "parameters": {
+   "logAnalyticsWorkspace": {
+    "value": "/subscriptions/c9002291-712b-4b0c-a671-2a4972734433/resourcegroups/rg-log-automation-avd/providers/microsoft.operationalinsights/workspaces/law-avd"
+   },
+   "bringYourOwnUserAssignedManagedIdentity": {
+    "value": false
+   }
+  },
+  "metadata": {
+   "assignedBy": "Benno Rummens",
+   "parameterScopes": {
+    "logAnalyticsWorkspace": "/subscriptions/c9002291-712b-4b0c-a671-2a4972734433/resourcegroups/rg-log-automation-avd"
+   },
+   "createdBy": "42d7420e-ccf0-4116-9246-d1127b896969",
+   "createdOn": "2023-02-06T12:31:01.3930409Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/AzureVirtualDesktop/providers/Microsoft.Authorization/policyAssignments/9a9bd0056a7e42bb93e3af40",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "9a9bd0056a7e42bb93e3af40",
+ "location": "westeurope"
+}
